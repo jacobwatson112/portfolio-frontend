@@ -21,10 +21,10 @@ function HomeView(){
           window.removeEventListener('resize', detectSize)
         }
       }, [windowDimenion])
-      
+
     return(
         <>
-        <NavbarComponent></NavbarComponent>
+        <NavbarComponent pageWidth={windowDimenion.winWidth}></NavbarComponent>
         <h1>Pog</h1>
 
         <p>Width: <strong>{windowDimenion.winWidth}</strong></p>
