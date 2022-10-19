@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ChakraProvider, Container } from "@chakra-ui/react";
 
+import NavbarComponent from "./components/NavbarComponent";
 import HomeView from './views/HomeView';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route index element={<HomeView />}></Route>
           </Routes>
         </Container>
+        <NavbarComponent />
       </BrowserRouter>
     </ChakraProvider>
   );

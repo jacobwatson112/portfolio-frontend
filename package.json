@@ -16,6 +16,7 @@
     "framer-motion": "^7.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "storybook": "^6.5.12",
@@ -71,6 +72,7 @@
     ]
   },
   "devDependencies": {
+    "@chakra-ui/storybook-addon": "^4.0.12",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
