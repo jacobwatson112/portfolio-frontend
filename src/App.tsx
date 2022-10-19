@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeView />}></Route>
+          <Route path="/home" element={<HomeView />}></Route>
           <Route index element={<HomeView />}></Route>
         </Routes>
       </BrowserRouter>

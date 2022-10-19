@@ -15,9 +15,9 @@ function NavbarComponent(props: NavbarComponentProps) {
         {props.pageWidth < 730 ?(
           <>
         <Box bg='blue' alignContent='right' h='100%'>
-          <Button h="100%" ml='10px' mr='10px' onClick={() => navigate('/')} leftIcon={<AiOutlineHome size={25} />}></Button>
-          <Button h="100%" ml='10px' mr='10px' leftIcon={<AiOutlineBulb size={25} />}></Button>
-          <Button h="100%" ml='10px' mr='10px' leftIcon={<AiOutlineMail size={25} />}></Button>
+          <IconButton h="100%" w='50px' ml='10px' mr='10px' aria-label="Home" onClick={() => navigate('/')} icon={<AiOutlineHome size={25} />}></IconButton>
+          <IconButton h="100%" w='50px' ml='10px' mr='10px' aria-label="Home" icon={<AiOutlineBulb size={25} />}></IconButton>
+          <IconButton h="100%" w='50px' ml='10px' mr='10px' aria-label="Home" icon={<AiOutlineMail size={25} />}></IconButton>
         </Box>
           </>
         ) : (
