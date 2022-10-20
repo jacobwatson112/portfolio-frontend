@@ -31,7 +31,7 @@ function NavbarComponent(props: NavbarComponentProps) {
   const btnRef = React.useRef();
   return (
     <>
-      <Flex h="50px" bg="green" w="100%">
+      <Flex h="50px" bg='#d3d3d3' w="100%">
         <Box>
           <Text
             color="black"
@@ -44,11 +44,11 @@ function NavbarComponent(props: NavbarComponentProps) {
           </Text>
         </Box>
         <Spacer />
-        {props.pageWidth < 730 ? (
-          <>
-            {props.pageWidth < 520 ? (
-              <>
-                <Box bg="blue" alignContent="right" h="100%">
+        <Box alignContent="right" h="100%">
+          {props.pageWidth < 730 ? (
+            <>
+              {props.pageWidth < 520 ? (
+                <>
                   <IconButton
                     h="100%"
                     w="50px"
@@ -75,7 +75,10 @@ function NavbarComponent(props: NavbarComponentProps) {
                         h="50px"
                         m="10px"
                         mt="50px"
-                        onClick={() => {onClose(); navigate("/")}}
+                        onClick={() => {
+                          onClose();
+                          navigate("/");
+                        }}
                         leftIcon={<AiOutlineHome size={25} />}
                       >
                         Home
@@ -96,11 +99,9 @@ function NavbarComponent(props: NavbarComponentProps) {
                       </Button>
                     </DrawerContent>
                   </Drawer>
-                </Box>
-              </>
-            ) : (
-              <>
-                <Box bg="blue" alignContent="right" h="100%">
+                </>
+              ) : (
+                <>
                   <IconButton
                     h="100%"
                     w="50px"
@@ -126,13 +127,11 @@ function NavbarComponent(props: NavbarComponentProps) {
                     aria-label="Home"
                     icon={<AiOutlineMail size={25} />}
                   ></IconButton>
-                </Box>
-              </>
-            )}
-          </>
-        ) : (
-          <>
-            <Box bg="blue" alignContent="right" h="100%">
+                </>
+              )}
+            </>
+          ) : (
+            <>
               <Button
                 h="100%"
                 ml="10px"
@@ -158,9 +157,9 @@ function NavbarComponent(props: NavbarComponentProps) {
               >
                 Contact
               </Button>
-            </Box>
-          </>
-        )}
+            </>
+          )}
+        </Box>
       </Flex>
     </>
   );
