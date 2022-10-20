@@ -4,18 +4,17 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ChakraProvider, Container } from "@chakra-ui/react";
 
-import HomeView from './views/HomeView';
+import HomeView from "./views/HomeView";
 
 function App() {
   return (
     <ChakraProvider>
       <BrowserRouter>
-        <Container padding={0}>
-          <Routes>
-            <Route path="/" element={<HomeView />}></Route>
-            <Route index element={<HomeView />}></Route>
-          </Routes>
-        </Container>
+        <Routes>
+          <Route path="/" element={<HomeView />}></Route>
+          <Route path="/home" element={<HomeView />}></Route>
+          <Route index element={<HomeView />}></Route>
+        </Routes>
       </BrowserRouter>
     </ChakraProvider>
   );
